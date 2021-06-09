@@ -16,7 +16,13 @@ const getPhotos = async () => {
   setPhoto(results)
 }
 
+
   return (
+    <>
+    <div>
+      <h1 className='main_title'>AstroPhoto</h1>    
+      <h5 className='sub_title'> Every day a new photo from NASA</h5>
+    </div>
     <div className="container">
       <h2 className="title">{photo?.title}</h2>
       <div className='image_container'>
@@ -26,8 +32,7 @@ const getPhotos = async () => {
       <p>{photo?.explanation}</p>
       </div>
     </div>
-      
-
+    </>  
   )
 }
 
